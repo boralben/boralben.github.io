@@ -4,15 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+My name is Ben Boral. I am a software developer based in Austin, Texas, USA.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Professionally, I am a software developer in test at [RxSaver](https://www.rxsaver.com) with a particular focus on native apps.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+I am a volunteer with [Citizens' Climate Lobby](https://www.cclusa.org). I am a co-creator of the [Monthly Calling Campaign](https://www.cclcalls.org) (MCC) (U.S. only). Each month, MCC sends personalized guides to calling Congress about climate change to thousands of Americans. The project is entirely [open source](https://github.com/orgs/project-grand-canyon/). [Hit me up](https://github.com/boralben) on Github to get involved!
