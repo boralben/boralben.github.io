@@ -40,6 +40,3 @@ when(isLabelDisplayed) {
     false -> doOtherThing()
 }
 ```
-
-Another fun Kotlin feature in this code is that the try/catch block is an expression, so we can simply the result of it.
-
