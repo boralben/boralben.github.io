@@ -18,7 +18,7 @@ For example:
 onView(withId(R.id.my_label)).check(matches(isDisplayed()))
 ```
 
-But what if you want to perform a check without breaking the execution of your test. We can use a Kotlin extension on `ViewInteraction` to add a function that will swallow errors and simply return true/false for a given `ViewAssertion`. This sugar allows us to avoid having to wrap our test code in try/catch blocks.
+But what if you want to perform a check without breaking the execution of your test in the case of a failed assertion. We can use a Kotlin extension on `ViewInteraction` to add a function that will swallow errors and simply return true/false for a given `ViewAssertion`. This sugar allows us to avoid having to wrap our test code in try/catch blocks.
 
 ```
 fun ViewInteraction.boolCheck(viewAssertion: ViewAssertion): Boolean {
