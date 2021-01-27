@@ -5,7 +5,7 @@ date:   2021-01-11 12:00:00 -0600
 categories: Espresso
 ---
 
-Espresso has a wonderfully simple syntax for checking the UI behavior of Android apps:
+Android's Espresso testing library has a wonderfully simple syntax for checking the UI behavior of Android apps:
 
 1. Construct a `ViewInteraction` by passing a `ViewMatcher` into `onView`
 2. Pass in a `ViewAssertion` to `ViewInteraction`'s `check` function
