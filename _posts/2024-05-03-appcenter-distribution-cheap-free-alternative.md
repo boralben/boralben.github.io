@@ -24,7 +24,7 @@ There are other options for app distribution like [Fastlane S3](https://docs.fas
 
 Bitrise's install pages enables quick sharing and installation of mobile app builds. By generating an install page for an app, you have a shareable a URL that can be sent via Slack, Teams, etc to testers or stakeholders, granting them access to install the latest build on their devices over the air without the need for them to use development tools or have direct access to the source code. OTA installation simplifies the distribution process, making it efficient to get feedback on each version of your app.
 
-![Screenshot of Install Page]({{ site.baseurl }}/images/install_page.png)
+![Screenshot of Install Page]({{ site.baseurl }}/images/install_page.png){: width="250" }
 
 ## How to get this for cheap or free on Bitrise
 
