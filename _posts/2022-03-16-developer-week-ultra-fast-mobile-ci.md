@@ -2,7 +2,7 @@
 layout: post
 title:  "Seven Steps to Ultra-fast Mobile Continuous Integration"
 date:   2022-03-16 08:20:00 -0600
-categories: [mobile ci/cd, talks]
+categories: [mobile cicd, talks]
 ---
 
 I was given the opportunity to speak on speeding up CI workflows for mobile apps at Developer Week SF in February. My talk, "Seven Steps to Ultra-fast Mobile Continuous Integration," discussed the following areas:
