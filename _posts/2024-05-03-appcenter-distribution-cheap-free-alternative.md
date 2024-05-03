@@ -2,7 +2,7 @@
 layout: post
 title:  "A Nice AppCenter Distribution Alternative On The Cheap"
 date:   2024-05-03 12:00:00 -0600
-categories: mobile ci/cd
+categories: [mobile ci/cd]
 ---
 
 ## TLDR
@@ -24,7 +24,7 @@ There are other options for app distribution like [Fastlane S3](https://docs.fas
 
 Bitrise's install pages enables quick sharing and installation of mobile app builds. By generating an install page for an app, you have a shareable a URL that can be sent via Slack, Teams, etc to testers or stakeholders, granting them access to install the latest build on their devices over the air without the need for them to use development tools or have direct access to the source code. OTA installation simplifies the distribution process, making it efficient to get feedback on each version of your app.
 
-![Screenshot of Install Page](../assets/images/install_page.png)
+![Screenshot of Install Page]({{ site.baseurl }}/images/install_page.png)
 
 ## How to get this for cheap or free on Bitrise
 
@@ -32,7 +32,7 @@ The install page feature doesn’t cost anything, actually. Bitrise assumes that
 
 The particular pricing tier you’ll land on will largely depend on the number people from your team will create user accounts in Bitrise. However, using an install page does not necessarily require a user account, so if you had just one user that manages the Bitrise workspace, you could fit on the free “Hobby” tier. (But unless you’re a tiny, cash-strapped company or nonprofit, I’d request you use a paid tier)
 
-![Screenshot of pricing tiers, including hobby for free, starter at $89/month, Teams at $202.50/month, and customer enterprise plans](../assets/images/pricing.png)
+![Screenshot of pricing tiers, including hobby for free, starter at $89/month, Teams at $202.50/month, and customer enterprise plans]({{ site.baseurl }}/images/pricing.png)
 
 ## Example project using Bitrise Install Pages with non-Bitrise CI
 In this example, I’ll be building an app in Github Actions using Fastlane, but you can extend this idea to whichever CI tool you are currently use.
@@ -55,7 +55,7 @@ end
 
 ### Create your Bitrise project
 With a Fastfile in place, create an account on bitrise.io and use the Add New App wizard to create a new project.
-![Screenshot of Add New App button](../assets/images/add_new_app.png)
+![Screenshot of Add New App button]({{ site.baseurl }}/images/add_new_app.png)
 
 The wizard is pretty easy to use, so I will not describe every step here, but there are a few steps that need extra explaining. 
 
@@ -67,15 +67,15 @@ Bitrise is going to try to set up default CI workflows for you based on the deta
 
 For stack selector, I recommend using the smallest Linux runner to keep things as low-cost as possible. 
 
-![Screenshot of stack selection](../assets/images/stack_selector.png)
+![Screenshot of stack selection]({{ site.baseurl }}/images/stack_selector.png)
 
 Click through the remaining steps of the wizard and you now have an app. By the way - the Bitrise app name is taken from the Git URL you provided earlier, so you can go to App Settings and update the name of your app to your actual app name.
 
-![Screenshot of changing app name](../assets/images/app_settings.png)
+![Screenshot of changing app name]({{ site.baseurl }}/images/app_settings.png)
 
 Now that your app is created and properlynamed, you’re going to need to create an [access token](https://devcenter.bitrise.io/en/accounts/personal-access-tokens.html) that will be used later, in the Github Actions job. You’ll also need to take note of the app slug of your Bitrise app, which can be identified in the URL of your app.
 
-![Screenshot of URL bar with app slug in the URL](../assets/images/app_slug.png)
+![Screenshot of URL bar with app slug in the URL]({{ site.baseurl }}/images/app_slug.png)
 
 Let’s pause here and set things up in Github Actions. Then we’ll jump back to Bitrise.
 
