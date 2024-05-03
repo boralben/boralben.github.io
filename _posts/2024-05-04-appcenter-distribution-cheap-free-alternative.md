@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Nice AppCenter Distribution Alternative On The Cheap"
-date:   2024-05-24 12:00:00 -0600
+date:   2024-05-03 12:00:00 -0600
 categories: mobile ci/cd
 ---
 
