@@ -6,19 +6,19 @@ categories: mobile ci/cd
 ---
 
 ## TLDR
-If you use AppCenter Distribution but not AppCenter’s CI, you can use  Bitrise for over-the-air app distribution without having to switch your CI using the snippet below.
+If you use AppCenter Distribution but not AppCenter’s CI, you can take advantage of Bitrise's over-the-air app distribution without having to switch your CI.
 
 ## Intro 
 
-Working at Bitrise, I’ve met >200 mobile teams that use AppCenter. If your team is like these teams, you use Github Actions, Azure DevOps, or some other tool to power your continuous integration, and your AppCenter usage is limited to their app distribution. 
+Working at Bitrise, I’ve met >200 mobile teams that use AppCenter. If your team is like these teams, you use Github Actions, Azure DevOps, or some other tool to power your continuous integration, and your AppCenter usage is limited to their app distribution functionality. 
 
-It’s a convenient way to distribute internal builds to your tester (i.e. for each PR), especially if you are already a Microsoft shop. You might have even gotten AppCenter included for free in your Microsoft license.
+AppCenter Distribution is a really convenient way to distribute internal builds to your testers (i.e. for each PR), especially if you are already a Microsoft shop. You might have even gotten AppCenter included for free in your Microsoft license.
 
 Now that AppCenter is being shut down, you’ll need a replacement for distributing those internal builds. Bitrise Install Pages can provide that for you. I'll show you how to do that below.
 
 There are other options for app distribution like [Fastlane S3](https://docs.fastlane.tools/actions/s3/). So why use Bitrise? For one, you don't have to bother with AWS. You'll find that using Bitrise quite simple. And you'll benefit from [continuous improvements](https://roadmap.bitrise.io) like the [central artifact page](https://roadmap.bitrise.io/c/131-a-centralized-page-for-installable-artifacts-of-a-bitrise-app), which will provide filters for testers to quickly find the app executable they need.
 
-⚠️ If you need a replacement for AppCenter CI (or you are already using Bitrise for CI), then you don’t need to read this post. OTA distribution is automatically enabled in Bitrise CI, so just set up a CI workflow in Bitrise and you’ll have OTA distribution out of the box. This article describes some workarounds to integrate with other CI tools. I hope that we'll soon provide more native integrations so that the workarounds in this article become unnecessary.
+⚠️ If you need a replacement for AppCenter CI (or you are already using Bitrise for CI), then you don’t need to read this post. OTA distribution is automatically enabled in Bitrise CI, so just set up a CI workflow in Bitrise and you’ll have OTA distribution out of the box. This article describes some workarounds to integrate with non-Bitrise CI providers. I hope that in the future we'll provide more native integrations with non-Bitrise CI providers so that the workarounds in this article become unnecessary.
 
 ## Bitrise Install Pages
 
